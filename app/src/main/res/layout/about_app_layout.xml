@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="65dp"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="About app"
+            android:textAllCaps="true"
+            android:textColor="#333333"
+            android:textSize="16.67sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        tool:cardBackgroundColor="#fff"
+        tool:cardCornerRadius="5dp"
+        tool:cardPreventCornerOverlap="false"
+        tool:cardUseCompatPadding="true"
+        android:elevation="10dp"
+        xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:id="@+id/details_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14.87sp"
+                android:text="about app Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="14.87sp"
+                android:layout_marginTop="15dp"
+                android:text="about app Paragraph 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="14.87sp"
+                android:layout_marginTop="15dp"
+                android:text="about app Paragraph 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14.87sp"
+                    android:textStyle="bold"
+                    android:text="Version Number: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="14.87sp"
+                    android:text="3.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:src = "@drawable/ic_menu_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

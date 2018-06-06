@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="65dp"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/buy_packages"
+            android:textAllCaps="true"
+            android:textColor="#333333"
+            android:textSize="16.67sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        tool:cardBackgroundColor="#fff"
+        tool:cardCornerRadius="5dp"
+        tool:cardPreventCornerOverlap="false"
+        tool:cardUseCompatPadding="true"
+        android:elevation="10dp"
+        xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="#fff"
+        android:paddingTop="24dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edit_profile_button"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13.75sp"
+                android:text="Select type of package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Spinner
+                android:paddingLeft="20dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+                <ImageButton
+                    android:scaleY="2"
+                    android:scaleX="2"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dropdownicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="13.75sp"
+                android:textColor="#333333"
+                android:layout_marginTop="15dp"
+                android:text="Select Duration of Package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Spinner
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <ImageButton
+                android:scaleY="2"
+                android:scaleX="2"
+                android:layout_margin="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/dropdownicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/yellowbg"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="15.5sp"
+                    android:layout_alignParentStart="true"
+                    android:text="Total Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textAllCaps="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="15.5sp"
+                    android:layout_alignParentEnd="true"
+                    android:text="KD350.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:textColor="#fff"
+                android:background="@drawable/graybtn"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:text="Buy now"
+                android:layout_width="180dp"
+                android:layout_height="35dp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

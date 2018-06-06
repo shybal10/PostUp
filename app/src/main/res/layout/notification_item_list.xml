@@ -1,0 +1,34 @@
+<android.support.v7.widget.CardView
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    tool:cardBackgroundColor="#fff"
+    tool:cardCornerRadius="15dp"
+    tool:cardPreventCornerOverlap="false"
+    tool:cardUseCompatPadding="true"
+    android:elevation="10dp"
+    xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/notificationsicon"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="this is a new notification that you recieved today make sure u read what it contains and respond to it"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15.5sp"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

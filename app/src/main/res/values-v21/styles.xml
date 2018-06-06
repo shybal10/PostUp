@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!--
+                <item name="android:statusBarColor">@android:color/transparent</item>
+        -->
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">15sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">30dp</item><!-- item size in menu-->
+        <item name="listPreferredItemHeightSmall">30dp</item><!-- item size in menu-->
+        <item name="itemIconTint">@color/colorPrimary</item>
+
+    </style>
+</resources>

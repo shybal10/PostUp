@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="65dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/user_registration"
+            android:textAllCaps="true"
+            android:textColor="#333333"
+            android:textSize="16.67sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        tool:cardBackgroundColor="#fff"
+        tool:cardCornerRadius="5dp"
+        tool:cardPreventCornerOverlap="false"
+        tool:cardUseCompatPadding="true"
+        android:elevation="10dp"
+        xmlns:tool="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:background="#fff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/details_layout"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edit_profile_button"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="13.75sp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="5dp"
+                    android:text="Upload Photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+                    <Button
+                        android:background="@drawable/yellowbg"
+                        android:textColor="#333333"
+                        android:layout_margin="1dp"
+                        android:textSize="13.75sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="Browse"
+                        android:layout_width="100dp"
+                        android:layout_height="28dp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13.75sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13.75sp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13.75sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Re-Type Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <LinearLayout
+
+                    android:weightSum="2"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13.75sp"
+                            android:text="Country"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content" />
+                        <Spinner
+                            android:paddingLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_text_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13.75sp"
+                            android:text="City"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:paddingLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_text_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13.75sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Country Code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:paddingLeft="15dp"
+                    tools:text="50 balance"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13.75sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Telephone Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textSize="15sp"
+                    android:textColor="#333333"
+                    android:paddingLeft="5dp"
+                    tools:text="50 balance"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+
+                <Button
+                    android:textSize="13.87dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/reset_button_border"
+                    android:text="Submit"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/details_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:text="Click Here To View Our"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text=" terms &amp; conditions"
+                    android:textSize="13sp"
+                    android:textColor="#ffcc0a"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

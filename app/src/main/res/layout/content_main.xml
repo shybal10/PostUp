@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/pattren"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/search_text_box_relative_layout"
+        android:layout_alignParentTop="true"
+        android:background="#333333"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="13.87dp"
+            android:paddingStart="35dp"
+            android:hint="Search an item..."
+            android:background="@drawable/searchfeld"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:background="@android:color/transparent"
+            android:src="@drawable/search"
+            android:layout_width="35dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:src="@drawable/advancesearchicon"
+            android:layout_alignParentRight="true"
+            android:id="@+id/advanced_search"
+            android:background="@android:color/transparent"
+            android:layout_width="35dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_below="@+id/search_text_box_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fragment_continer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:background="#ffcc0a"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+
+        <ImageButton
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/homewhite"
+            android:textColor="#000"
+            android:id="@+id/home_button"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <View
+            android:background="#333333"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <ImageButton
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/catgegorwhite"
+            android:textColor="#87797F"
+            android:id="@+id/category_button"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Categories" />
+        <View
+            android:background="#333333"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </View>
+        <ImageButton
+            android:id="@+id/post_add_button"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/addwhite"
+            android:textColor="#87797F"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Post" />
+        <View
+            android:background="#333333"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <ImageButton
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/favwhite"
+            android:id="@+id/fav_button"
+            android:textColor="#87797F"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#333333"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <ImageButton
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/profilewhite"
+            android:id="@+id/profile_button"
+            android:textColor="#87797F"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Profile" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

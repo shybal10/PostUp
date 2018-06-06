@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="65dp"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="my profile"
+            android:textAllCaps="true"
+            android:textColor="#333333"
+            android:textSize="16.67sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#333333">
+
+        </View>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        tool:cardBackgroundColor="#fff"
+        tool:cardCornerRadius="5dp"
+        tool:cardPreventCornerOverlap="false"
+        tool:cardUseCompatPadding="true"
+        android:elevation="10dp"
+        xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/edit_profile_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/editprofile"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <Button
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"
+                android:textColor="@color/orange"
+                android:textSize="15sp"
+                android:text="Edit Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_below="@+id/edit_profile_button"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13.75sp"
+                android:text="@string/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="15.5sp"
+                android:textColor="#333333"
+                android:paddingLeft="5dp"
+                tools:text="Sample name"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13.75sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                tools:text="mail@postup.com"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13.75sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/telephone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                tools:text="Sample Name"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13.75sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/my_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                tools:text="50 balance"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13.75sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/choose_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:paddingLeft="5dp"
+                tools:text="50 balance"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/details_layout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#333333"
+                android:textSize="13.75sp"
+                android:text="@string/forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="@string/click_here"
+                android:background="@android:color/transparent"
+                android:textColor="@color/orange"
+                android:textSize="13.75sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/linkarrow"
+                android:scaleType="fitXY"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    android:padding="24dp"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <ImageView
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/english_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/english_button_border"
+                android:text="@string/english"
+                android:textColor="#fff"
+                android:textSize="15.75sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/arabic_button_background"
+                android:text="@string/arabic"
+                android:textSize="15.75sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp">
+
+            <Spinner
+                android:id="@+id/input_citizenship"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btnbg">
+            </Spinner>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:scaleX="1.8"
+                android:scaleY="1.8"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
