@@ -18,7 +18,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:textColor="#333333"
-            android:textSize="16.67sp"
+            android:textSize="17.67sp"
             android:textAllCaps="true"
             android:textStyle="bold"
             android:gravity="center_horizontal"
@@ -29,24 +29,51 @@
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <Button
-                android:textSize="13.87sp"
+            <RelativeLayout
                 android:layout_marginRight="15dp"
-                android:background="@drawable/push"
-                android:layout_alignParentRight="true"
-                android:text="@string/active"
-                android:id="@+id/active_button"
-                android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp" />
-            <Button
-                android:textSize="13.87sp"
-                android:background="@drawable/automatic"
-                android:text="@string/expired"
-                android:id="@+id/expired_button"
-                android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp" />
+                android:orientation="vertical"
+                android:layout_width="100dp"
+                android:layout_height="45dp">
+                <Button
+                    android:textSize="13sp"
+                    android:background="@drawable/push"
+                    android:text="@string/automatic"
+                    android:id="@+id/active_button"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pusharrow"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="100dp"
+                android:layout_height="45dp">
+                <Button
+                    android:textSize="13sp"
+                    android:background="@drawable/yellowbutton"
+                    android:text="PUSH"
+                    android:id="@+id/push_button"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pusharrow"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+            </RelativeLayout>
         </LinearLayout>
 
 

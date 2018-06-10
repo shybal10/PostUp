@@ -34,7 +34,7 @@
             android:text="Advanced search"
             android:textAllCaps="true"
             android:textColor="#333333"
-            android:textSize="16.67sp"
+            android:textSize="17.67sp"
             android:textStyle="bold" />
 
         <View
@@ -58,7 +58,7 @@
         android:layout_marginTop="10dp"
         android:elevation="10dp"
         tool:cardBackgroundColor="#fff"
-        tool:cardCornerRadius="5dp"
+        tool:cardCornerRadius="10dp"
         tool:cardPreventCornerOverlap="false"
         tool:cardUseCompatPadding="true">
 
@@ -79,11 +79,11 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="30dp">
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_background"
                     android:paddingLeft="5dp"
@@ -91,10 +91,9 @@
                     android:textSize="15.75sp" />
 
                 <ImageButton
-                    android:scaleY="1.2"
-                    android:scaleX="1.2"
+                    android:layout_marginTop="4dp"
                     android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:background="@android:color/transparent"
                     android:contentDescription="search_button"
@@ -203,11 +202,12 @@
                     android:textSize="13sp" />
 
                 <Button
+                    android:layout_marginLeft="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:text="@string/terms_amp_conditions"
-                    android:textColor="#ffcc0a"
+                    android:textColor="@color/orange"
                     android:textSize="13sp" />
 
 

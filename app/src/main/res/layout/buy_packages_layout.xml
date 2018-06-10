@@ -35,7 +35,7 @@
             android:text="@string/buy_packages"
             android:textAllCaps="true"
             android:textColor="#333333"
-            android:textSize="16.67sp"
+            android:textSize="17.67sp"
             android:textStyle="bold" />
 
         <View
@@ -58,17 +58,16 @@
         android:layout_height="wrap_content"
         xmlns:card_view="http://schemas.android.com/tools"
         tool:cardBackgroundColor="#fff"
-        tool:cardCornerRadius="5dp"
+        tool:cardCornerRadius="10dp"
         tool:cardPreventCornerOverlap="false"
         tool:cardUseCompatPadding="true"
         android:elevation="10dp"
         xmlns:tool="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
-        android:background="#fff"
         android:paddingTop="24dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/details_layout"
@@ -134,7 +133,7 @@
             </RelativeLayout>
             <RelativeLayout
                 android:background="@drawable/yellowbg"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="35dp">
 
@@ -145,7 +144,7 @@
                     android:textColor="#333333"
                     android:textSize="15.5sp"
                     android:layout_alignParentStart="true"
-                    android:text="Total Amount"
+                    android:text="Total Amount:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -166,10 +165,10 @@
 
             <Button
                 android:textColor="#fff"
-                android:background="@drawable/graybtn"
-                android:layout_marginTop="25dp"
+                android:background="@drawable/reset_button_border"
+                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="30dp"
                 android:text="Buy now"
                 android:layout_width="180dp"
                 android:layout_height="35dp" />

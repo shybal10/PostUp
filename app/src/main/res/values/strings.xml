@@ -14,7 +14,7 @@
     <string name="twitter">Twitter</string>
     <string name="skip">Skip</string>
     <string name="buy_packages">BUY PACKAGES</string>
-    <string name="forget_password">Forget password</string>
+    <string name="forget_password">Forgot password</string>
     <string name="my_profile">My profile</string>
     <string name="advanced_search">Advanced Search</string>
     <string name="enter_keyword">Enter Keyword</string>
@@ -22,7 +22,7 @@
     <string name="advertiser_name">Advertiser Name</string>
     <string name="date">Date</string>
     <string name="find">find</string>
-    <string name="click_here_to_view_our">Click Here To View Our </string>
+    <string name="click_here_to_view_our">Click Here To View Our</string>
     <string name="terms_amp_conditions"><![CDATA[terms & conditions]]></string>
     <string name="about_app">About App</string>
     <string name="english">English</string>
@@ -41,10 +41,11 @@
     <string name="sell_your_item">Sell your Item</string>
     <string name="title">title</string>
     <string name="select_category">Select Category</string>
-    <string name="select_sub_category">Select Sub-Category</string>
+    <string name="select_sub_category">Select SubCategory</string>
     <string name="description">Description</string>
     <string name="price">Price</string>
     <string name="pin_on_map">Pin on map</string>
     <string name="area">Area</string>
     <string name="contact_number">Contact Number</string>
+    <string name="automatic">AUTOMATIC</string>
 </resources>

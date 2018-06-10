@@ -3,9 +3,9 @@
     <color name="colorPrimary">#333333</color>
     <color name="colorPrimaryDark">#333333</color>
     <color name="colorAccent">#333333</color>
-    <color name="orange">#fecc0b</color>
+    <color name="orange">#f6c911</color>
     <color name="gray">#ececec</color>
     <color name="shade">#80f9a705</color>
-    <color name="specialOrange">#f9a705</color>
-    <color name="yellow">#fecc0b</color>
+    <!--<color name="specialOrange">#f9a705</color>-->
+    <color name="yellow">#f6c911</color>
 </resources>

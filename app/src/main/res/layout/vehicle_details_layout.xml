@@ -37,7 +37,7 @@
             android:text="Vehicles"
             android:textAllCaps="true"
             android:textColor="#333333"
-            android:textSize="16.67sp"
+            android:textSize="17.67sp"
             android:textStyle="bold" />
 
         <View
@@ -66,7 +66,7 @@
         android:layout_marginTop="10dp"
         android:elevation="10dp"
         tool:cardBackgroundColor="#fff"
-        tool:cardCornerRadius="5dp"
+        tool:cardCornerRadius="10dp"
         tool:cardPreventCornerOverlap="false"
         tool:cardUseCompatPadding="true">
         <LinearLayout

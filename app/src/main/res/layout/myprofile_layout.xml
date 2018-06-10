@@ -35,7 +35,7 @@
             android:text="my profile"
             android:textAllCaps="true"
             android:textColor="#333333"
-            android:textSize="16.67sp"
+            android:textSize="17.67sp"
             android:textStyle="bold" />
 
         <View
@@ -54,17 +54,15 @@
         android:layout_marginRight="15dp"
         android:layout_marginTop="10dp"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         xmlns:card_view="http://schemas.android.com/tools"
-        tool:cardBackgroundColor="#fff"
-        tool:cardCornerRadius="5dp"
+        tool:cardCornerRadius="10dp"
         tool:cardPreventCornerOverlap="false"
         tool:cardUseCompatPadding="true"
         android:elevation="10dp"
         xmlns:tool="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
-        android:background="#fff"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:layout_width="match_parent"
@@ -175,13 +173,26 @@
                 android:text="@string/choose_package"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-            <Spinner
-                android:paddingLeft="5dp"
-                tools:text="50 balance"
+            <RelativeLayout
                 android:layout_marginTop="5dp"
-                android:background="@drawable/edit_text_background"
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ImageButton
+                    android:scaleY="2"
+                    android:scaleX="2"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dropdownicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
 
 
         </LinearLayout>

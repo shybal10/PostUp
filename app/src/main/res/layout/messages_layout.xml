@@ -37,7 +37,7 @@
             android:text="messages"
             android:textAllCaps="true"
             android:textColor="#333333"
-            android:textSize="16.67sp"
+            android:textSize="17.67sp"
             android:textStyle="bold" />
 
         <View

@@ -37,7 +37,7 @@ public class MessageRecyclerViewAdapter extends RecyclerView.Adapter<MessageRecy
             senderName = (TextView) itemView.findViewById(R.id.sender_name_text);
             dateSent = (TextView) itemView.findViewById(R.id.date_sent_text);
             message = (TextView) itemView.findViewById(R.id.sender_message_text);
-            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            imageView = (ImageView) itemView.findViewById(R.id.message_image);
         }
     }
 }

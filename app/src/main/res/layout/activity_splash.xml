@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splashbg"
+    android:background="@drawable/loginbg"
     android:padding="24dp"
     tools:context=".SplashActivity">
 
@@ -50,22 +50,27 @@
                 android:textSize="15.75sp" />
         </LinearLayout>
         <RelativeLayout
+            android:background="@drawable/login_btn_border"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="35dp">
 
             <Spinner
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@android:color/transparent"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
                 android:id="@+id/input_citizenship"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/btnbg">
+                android:layout_height="match_parent">
             </Spinner>
             <ImageButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginTop="5dp"
                 android:background="@android:color/transparent"
                 android:scaleX="1.8"

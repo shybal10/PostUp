@@ -42,8 +42,8 @@ public class SplashActivity extends AppCompatActivity {
             }
         }*/
         countries.add(0,"CHOOSE COUNTRY");
-        countries.add(1,"India");
-        countries.add(2,"Kuwait");
+        countries.add(1,"INDIA");
+        countries.add(2,"KUWAIT");
 
 
         Spinner citizenship = (Spinner)findViewById(R.id.input_citizenship);

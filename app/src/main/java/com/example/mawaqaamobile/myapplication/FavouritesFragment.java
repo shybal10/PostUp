@@ -66,7 +66,6 @@ public class FavouritesFragment extends Fragment implements FavsListRecyclerView
         });
 
     }
-
     private void changeButton(int id) {
         if (id == R.id.list_view_image_button) {
             listImageButton.setImageDrawable(getResources().getDrawable(R.drawable.categorygray));

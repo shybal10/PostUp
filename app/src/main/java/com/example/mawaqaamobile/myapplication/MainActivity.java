@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.ActionBar;
 import android.view.View;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.setScrimColor(ContextCompat.getColor(getApplicationContext(), android.R.color.transparent));
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -66,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Drawable d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, 40, 40, true));
         // Set your new, scaled drawable "d"
         getSupportActionBar().setHomeAsUpIndicator(d);
-
         loadFragments();
 
         homeButton = findViewById(R.id.home_button);
@@ -192,6 +193,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             selectedFragment = buyPackagesFragment;
         } else if (id == R.id.fav_ads_id){
             selectedFragment = favouritesFragment;
+            changeButtonColour(R.id.fav_button);
+
         } else if (id == R.id.my_ads_id) {
             selectedFragment = myAdsFragment;
         } else if (id == R.id.my_messages_id) {
@@ -210,36 +213,44 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void changeButtonColour(int id) {
         if (id == R.id.home_button) {
-            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.homegray));
-            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.addwhite));
-            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.profilewhite));
-            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.favwhite));
-            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.catgegorywhite));
+            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.menuoneover));
+            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.menuthree));
+            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.menufive));
+            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.menufour));
+            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwo));
         } else if (id == R.id.post_add_button) {
-            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.homewhite));
-            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.addgray));
-            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.profilewhite));
-            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.favwhite));
-            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.catgegorywhite));
+            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.menuone));
+            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.menuthreeover));
+            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.menufive));
+            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.menufour));
+            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwo));
         } else if (id == R.id.profile_button) {
-            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.homewhite));
-            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.addwhite));
-            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.profilegray));
-            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.favwhite));
-            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.catgegorywhite));
+            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.menuone));
+            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.menuthree));
+            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.menufiveover));
+            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.menufour));
+            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwo));
         } else if (id == R.id.fav_button) {
-            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.homewhite));
-            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.addwhite));
-            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.profilewhite));
-            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.favgray));
-            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.catgegorywhite));
+            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.menuone));
+            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.menuthree));
+            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.menufive));
+            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.menufourover));
+            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwo));
         } else if (id == R.id.category_button) {
-            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.homewhite));
-            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.addwhite));
-            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.profilewhite));
-            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.favwhite));
-            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.catgegorygray));
+            homeButton.setImageDrawable(getResources().getDrawable(R.drawable.menuone));
+            sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.menuthree));
+            profleButton.setImageDrawable(getResources().getDrawable(R.drawable.menufive));
+            favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.menufour));
+            categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwoover));
         }
+    }
+
+    private void resetButton() {
+        homeButton.setImageDrawable(getResources().getDrawable(R.drawable.menuone));
+        sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.menuthree));
+        profleButton.setImageDrawable(getResources().getDrawable(R.drawable.menufive));
+        favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.menufour));
+        categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwo));
     }
 
     private Bitmap resizeBitmapImageFn(

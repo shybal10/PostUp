@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="140dp"
-    xmlns:card_view="http://schemas.android.com/tools"
-    card_view:cardCornerRadius="10dp"
+    tool:cardCornerRadius="10dp"
     tool:cardPreventCornerOverlap="false"
     android:layout_marginBottom="5dp"
     tool:cardUseCompatPadding="true"
@@ -16,29 +15,29 @@
         android:layout_marginRight="15dp"
         android:orientation="horizontal"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginBottom="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:background="@android:color/transparent"
             android:src="@drawable/msslisticon"
             android:id="@+id/message_image"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:textStyle="bold"
                 android:maxLines="1"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#000"
                 android:id="@+id/sender_name_text"
                 android:text = "sender name"
-                android:textSize="15.88sp"
+                android:textSize="16sp"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -48,36 +47,30 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textStyle="bold"
                     android:layout_marginTop="5dp"
-                    android:textSize="13.75sp"
+                    android:textSize="14sp"
                     android:textColor="@color/orange"
                     android:layout_marginLeft="10dp"
-                    android:text="date"
+                    android:text="27 September 2017"
                     android:id="@+id/date_sent_text"
                     android:maxLines="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
-
-
             <TextView
                 android:ellipsize="end"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:text="message that needs to be sent from the user to another user"
-                android:textSize="13.758sp"
+                android:textSize="14sp"
                 android:textColor="@color/colorPrimary"
                 android:id="@+id/sender_message_text"
                 android:maxLines="2"
-
                 />
         </LinearLayout>
-
-
     </LinearLayout>
-
-
 </android.support.v7.widget.CardView>

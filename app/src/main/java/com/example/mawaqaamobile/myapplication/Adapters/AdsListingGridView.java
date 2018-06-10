@@ -9,7 +9,7 @@ import android.widget.GridView;
 
 import com.example.mawaqaamobile.myapplication.R;
 
-public class AdsListingGridView extends BaseAdapter {
+public class AdsListingGridView extends BaseAdapter{
 
     Context mcontext;
 
@@ -53,4 +53,5 @@ public class AdsListingGridView extends BaseAdapter {
         }
         return imageView;
     }
+
 }

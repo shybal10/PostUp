@@ -88,6 +88,5 @@ public class AdsListingFragment extends Fragment implements AdsListRecyclerViewA
     @Override
     public void onListItemClick(int clickedItemIndex) {
         getFragmentManager().beginTransaction().replace(R.id.fragment_continer, detailsFragment).commit();
-
     }
 }
