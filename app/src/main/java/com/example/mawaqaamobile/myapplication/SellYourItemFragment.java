@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -34,6 +35,7 @@ import static android.app.Activity.RESULT_OK;
 
 public class SellYourItemFragment extends Fragment{
     MapView mMapView;
+    Button termsButton;
     private GoogleMap googleMap;
     private ImageButton addPhotosButton, addImagesButton;
     private static int RESULT_LOAD_IMAGE = 1;
@@ -49,6 +51,8 @@ public class SellYourItemFragment extends Fragment{
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         addImagesButton = view.findViewById(R.id.add_images_button);
         addPhotosButton = view.findViewById(R.id.add_photo_button);
+        termsButton = view.findViewById(R.id.terms_button);
+        termsButton.setPaintFlags(termsButton.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
 
         mMapView = (MapView) view.findViewById(R.id.mapView);
         mMapView.onCreate(savedInstanceState);

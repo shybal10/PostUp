@@ -26,14 +26,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
-            android:textSize="19.75sp"
+            android:textSize="21.75sp"
             android:textColor="@color/colorPrimary"
             android:textAllCaps="true"
             android:text="Chances to "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:textSize="19.75sp"
+            android:textSize="21.75sp"
             android:textColor="#fff"
             android:textAllCaps="true"
             android:text="win"

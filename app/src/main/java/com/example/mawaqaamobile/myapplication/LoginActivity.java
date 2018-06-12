@@ -1,6 +1,7 @@
 package com.example.mawaqaamobile.myapplication;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -22,7 +23,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
-    Button loginButton, forgotPasswordButton, registerButton;
+    Button loginButton, forgotPasswordButton, registerButton,skip;
     EditText username, password;
     TextInputLayout userLayout,passLayout;
 
@@ -31,6 +32,8 @@ public class LoginActivity extends AppCompatActivity {
         StatusBarUtil.setTransparent(LoginActivity.this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        skip = (Button) findViewById(R.id.skip_button);
+        skip.setPaintFlags(skip.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
         username = (EditText) findViewById(R.id.username_edit_text);
         password = (EditText) findViewById(R.id.password_edit_text);
         userLayout = (TextInputLayout) findViewById(R.id.input_layout_email);
