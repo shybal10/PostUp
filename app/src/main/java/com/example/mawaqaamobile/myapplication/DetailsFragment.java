@@ -8,15 +8,19 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.mawaqaamobile.myapplication.Adapters.CustomSwipeAdapter;
+import com.example.mawaqaamobile.myapplication.Adapters.SpecificationsGridViewAdapter;
 
 public class DetailsFragment extends Fragment {
     CustomSwipeAdapter customSwipeAdapter;
     ViewPager viewPager;
     LinearLayout slideDots;
+    SpecificationsGridViewAdapter specificationsGridViewAdapter;
+    GridView specificationGridView;
     private int dotsCount;
     private ImageView[] dots;
 
@@ -29,6 +33,9 @@ public class DetailsFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        specificationGridView = (GridView) view.findViewById(R.id.specifications_gridview);
+        specificationsGridViewAdapter = new SpecificationsGridViewAdapter(getActivity());
+        specificationGridView.setAdapter(specificationsGridViewAdapter);
         viewPager = (ViewPager) view.findViewById(R.id.view_pager);
         customSwipeAdapter = new CustomSwipeAdapter(getActivity());
         viewPager.setAdapter(customSwipeAdapter);

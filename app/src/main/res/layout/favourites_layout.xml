@@ -19,6 +19,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:layout_marginBottom="10dp"
             android:weightSum="3"
             android:gravity="center"
             android:orientation="horizontal"
@@ -52,13 +53,11 @@
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
             android:clipToPadding="false"
-            android:layout_marginTop="10dp"
             android:id="@+id/fav_list_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </android.support.v7.widget.RecyclerView>
         <GridView
-            android:layout_marginTop="10dp"
             android:horizontalSpacing="3dp"
             android:verticalSpacing="3dp"
             android:id="@+id/gridview_favs"

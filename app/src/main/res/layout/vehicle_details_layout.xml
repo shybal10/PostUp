@@ -327,7 +327,7 @@
                 android:textSize="16.87sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-            <LinearLayout
+<!--            <LinearLayout
                 android:orientation="horizontal"
                 android:weightSum="2"
                 android:layout_width="match_parent"
@@ -464,8 +464,19 @@
                         android:layout_height="wrap_content" />
                 </LinearLayout>
 
-            </LinearLayout>
+            </LinearLayout>-->
 
+            <GridView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/specifications_gridview"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:numColumns="2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+            </GridView>
 
             <Button
                 android:layout_marginTop="20dp"
