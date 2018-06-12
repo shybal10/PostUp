@@ -94,8 +94,8 @@
             </RelativeLayout>
             <RelativeLayout
                 android:background="@color/gray"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:layout_width="match_parent"
@@ -105,25 +105,23 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:text="Item Id: "
+                        android:text="Item Id:"
                         android:textColor="@color/colorPrimary"
                         android:textSize="12.87sp" />
 
                     <TextView
                         android:textStyle="bold"
-
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="2dp"
+                        android:layout_marginStart="5dp"
                         android:text="#4551"
                         android:textColor="@color/colorPrimary"
                         android:textSize="12.87sp" />
@@ -134,8 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_marginEnd="2dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:src="@drawable/view"
                         android:layout_width="20dp"
                         android:layout_height="20dp" />
@@ -159,7 +156,7 @@
                     android:src="@drawable/dat" />
 
                 <TextView
-                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="4dp"
                     android:layout_centerVertical="true"
                     android:id="@+id/date_text_view"
                     android:layout_width="wrap_content"
@@ -172,6 +169,8 @@
             </RelativeLayout>
 
             <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,7 +187,6 @@
                         android:layout_marginBottom="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
                         android:text="Vehicle Name"
                         android:textColor="@color/colorPrimary"
                         android:textSize="17.87sp"
@@ -198,7 +196,6 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
                         android:ellipsize="end"
                         android:maxLines="2"
                         android:text="a samell description about the product is necessary to understand the product"
@@ -212,7 +209,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="8dp"
                             android:text="Area: "
                             android:textColor="@color/colorPrimary"
@@ -221,15 +217,14 @@
                         <ImageView
                             android:layout_width="15dp"
                             android:layout_height="15dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="2dp"
+                            android:layout_marginEnd="2dp"
                             android:layout_marginTop="10dp"
                             android:src="@drawable/location" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
                             android:layout_marginTop="8dp"
                             android:text="Kuwait"
                             android:textColor="@color/colorPrimary"
@@ -245,16 +240,15 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="8dp"
-                            android:text="Condition: "
+                            android:text="Condition:"
                             android:textColor="@color/colorPrimary"
                             android:textSize="15sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
                             android:layout_marginTop="8dp"
                             android:text="Good"
                             android:textStyle="bold"
@@ -284,16 +278,16 @@
                             android:layout_marginBottom="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:maxLines="2"
-                            android:text="Price: "
+                            android:layout_marginStart="10dp"
+                            android:maxLines="1"
+                            android:text="Price:"
                             android:textColor="@color/colorPrimary"
                             android:textSize="15sp"
 
                             />
 
                         <TextView
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_marginBottom="15dp"
                             android:padding="8dp"
                             android:background="@drawable/smallbtngraybg"
@@ -347,21 +341,21 @@
                     android:layout_width="0dp"
                     android:layout_height="35dp">
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text="make "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text=":"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13.87sp"
@@ -378,21 +372,21 @@
                     android:layout_width="0dp"
                     android:layout_height="35dp">
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text="make "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text=":"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13.87sp"
@@ -416,21 +410,21 @@
                     android:layout_width="0dp"
                     android:layout_height="35dp">
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text="make "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text=":"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13.87sp"
@@ -447,21 +441,21 @@
                     android:layout_width="0dp"
                     android:layout_height="35dp">
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text="make "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textSize="13.87sp"
                         android:textColor="@color/colorPrimary"
                         android:text=":"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13.87sp"

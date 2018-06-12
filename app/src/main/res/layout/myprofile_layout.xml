@@ -107,7 +107,8 @@
             <EditText
                 android:textSize="15.5sp"
                 android:textColor="#333333"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 tools:text="Sample name"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_background"
@@ -119,12 +120,13 @@
                 android:textSize="13.75sp"
                 android:layout_marginTop="15dp"
                 android:text="@string/email"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
                 android:textColor="#333333"
                 android:textSize="15sp"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 tools:text="mail@postup.com"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_background"
@@ -136,12 +138,13 @@
                 android:textSize="13.75sp"
                 android:layout_marginTop="15dp"
                 android:text="@string/telephone_number"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
                 android:textColor="#333333"
                 android:textSize="15sp"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 tools:text="Sample Name"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_background"
@@ -154,12 +157,13 @@
                 android:textSize="13.75sp"
                 android:layout_marginTop="15dp"
                 android:text="@string/my_balance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
             <EditText
                 android:textColor="#333333"
                 android:textSize="15sp"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 tools:text="50 balance"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_background"
@@ -171,7 +175,7 @@
                 android:textSize="13.75sp"
                 android:layout_marginTop="15dp"
                 android:text="@string/choose_package"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <RelativeLayout
                 android:layout_marginTop="5dp"

@@ -141,7 +141,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title"
                     android:textColor="@color/colorPrimary"
@@ -152,12 +152,13 @@
                     android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_background"
-                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15.75sp" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="@string/select_category"
@@ -186,7 +187,7 @@
 
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="@string/select_sub_category"
@@ -215,7 +216,7 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="@string/description"
@@ -227,12 +228,13 @@
                     android:layout_height="70dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_background"
-                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
                     android:textSize="15.5sp" />
 
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="@string/price"
@@ -244,7 +246,8 @@
                     android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_background"
-                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15.5sp" />
 
@@ -261,10 +264,10 @@
                         android:src="@drawable/map" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:gravity="top"
                         android:text="@string/pin_on_map"
                         android:textColor="@color/colorPrimary"
@@ -283,7 +286,7 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/area"
                     android:textColor="@color/colorPrimary"
@@ -294,12 +297,13 @@
                     android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_background"
-                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15.5sp" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="@string/contact_number"
@@ -311,7 +315,8 @@
                     android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edit_text_background"
-                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15.5sp" />
 
@@ -331,7 +336,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:text="Display my number to public"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13.87sp" />
@@ -357,11 +362,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="I agree to "
+                            android:layout_marginStart="5dp"
+                            android:text="I agree to"
                             android:textColor="@color/colorPrimary"
                             android:textSize="13.87sp" />
                         <Button
+                            android:layout_marginStart="5dp"
                             android:id="@+id/terms_button"
                             android:textAllCaps="false"
                             android:textColor="@color/colorPrimary"

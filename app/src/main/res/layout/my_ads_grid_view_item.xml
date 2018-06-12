@@ -43,7 +43,7 @@
                     android:textColor="#fff"
                     android:textSize="13.87sp"
                     android:text="VIEWS-1987"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -87,7 +87,8 @@
                 android:padding="5dp"
                 android:background="@drawable/smallbtngraybg"
                 android:textStyle="bold"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"

@@ -110,7 +110,8 @@
             <EditText
                 android:textColor="#333333"
                 android:textSize="15.75sp"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_background"
                 android:layout_width="match_parent"
@@ -121,12 +122,13 @@
                 android:textSize="13.5sp"
                 android:layout_marginTop="15dp"
                 android:text="Subject"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
                 android:textColor="#333333"
                 android:textSize="15.75sp"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_background"
                 android:layout_width="match_parent"
@@ -137,12 +139,13 @@
                 android:textSize="13.5sp"
                 android:layout_marginTop="15dp"
                 android:text="Message"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
                 android:textColor="#333333"
                 android:textSize="15.75sp"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:layout_marginBottom="45dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_background"

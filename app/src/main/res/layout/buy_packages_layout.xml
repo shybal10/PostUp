@@ -78,7 +78,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:textColor="#333333"
+                android:textColor="@color/colorPrimary"
                 android:textSize="13.75sp"
                 android:text="Select type of package"
                 android:layout_width="wrap_content"
@@ -88,7 +88,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             <Spinner
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
                 android:background="@drawable/edit_text_background"
                 android:layout_width="match_parent"
                 android:layout_height="30dp" />
@@ -109,7 +110,7 @@
                 android:textColor="#333333"
                 android:layout_marginTop="15dp"
                 android:text="Select Duration of Package"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <RelativeLayout
                 android:layout_marginTop="5dp"
@@ -125,7 +126,6 @@
                 android:layout_margin="15dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
                 android:background="@android:color/transparent"
                 android:src="@drawable/dropdownicon"
                 android:layout_width="wrap_content"
@@ -139,7 +139,8 @@
 
                 <TextView
                     android:textAllCaps="true"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_centerVertical="true"
                     android:textColor="#333333"
                     android:textSize="15.5sp"
@@ -150,7 +151,8 @@
 
 
                 <TextView
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:textAllCaps="true"
                     android:layout_centerVertical="true"
                     android:textColor="#333333"
@@ -159,7 +161,6 @@
                     android:text="KD350.00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
             </RelativeLayout>
 
 

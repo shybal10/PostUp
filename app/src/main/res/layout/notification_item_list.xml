@@ -15,14 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="80dp">
         <ImageView
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_gravity="center_vertical"
             android:src="@drawable/notificationsicon"
             android:layout_width="45dp"
             android:layout_height="45dp" />
         <TextView
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
             android:layout_gravity="center_vertical"
             android:text="this is a new notification that you recieved today make sure u read what it contains and respond to it"
             android:textColor="@color/colorPrimary"
