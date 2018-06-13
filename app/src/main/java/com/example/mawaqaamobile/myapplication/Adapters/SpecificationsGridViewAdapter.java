@@ -16,7 +16,7 @@ public class SpecificationsGridViewAdapter extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return 20;
+        return 6;
     }
 
     @Override

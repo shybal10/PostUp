@@ -71,7 +71,7 @@
         tool:cardUseCompatPadding="true">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -327,144 +327,6 @@
                 android:textSize="16.87sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-<!--            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:background="@color/gray"
-                    android:orientation="horizontal"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp">
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text="make "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text=":"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="13.87sp"
-                        android:text="model"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:background="@color/gray"
-                    android:orientation="horizontal"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp">
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text="make "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text=":"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="13.87sp"
-                        android:text="model "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:background="@color/gray"
-                    android:orientation="horizontal"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp">
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text="make "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text=":"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="13.87sp"
-                        android:text="model "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:background="@color/gray"
-                    android:orientation="horizontal"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp">
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text="make "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textSize="13.87sp"
-                        android:textColor="@color/colorPrimary"
-                        android:text=":"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginStart="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="13.87sp"
-                        android:text="model "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-
-            </LinearLayout>-->
 
             <GridView
                 android:layout_marginStart="10dp"
@@ -474,8 +336,7 @@
                 android:verticalSpacing="1dp"
                 android:numColumns="2"
                 android:layout_width="match_parent"
-                android:layout_height="80dp">
-
+                android:layout_height="wrap_content">
             </GridView>
 
             <Button

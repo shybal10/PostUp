@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 
 import com.example.mawaqaamobile.myapplication.Adapters.CustomSwipeAdapter;
 import com.example.mawaqaamobile.myapplication.Adapters.SpecificationsGridViewAdapter;
+import com.example.mawaqaamobile.myapplication.UIUtils.UIUtils;
 
 public class DetailsFragment extends Fragment {
     CustomSwipeAdapter customSwipeAdapter;
@@ -36,6 +37,8 @@ public class DetailsFragment extends Fragment {
         specificationGridView = (GridView) view.findViewById(R.id.specifications_gridview);
         specificationsGridViewAdapter = new SpecificationsGridViewAdapter(getActivity());
         specificationGridView.setAdapter(specificationsGridViewAdapter);
+        UIUtils.setListViewHeightBasedOnItems(specificationGridView);
+
         viewPager = (ViewPager) view.findViewById(R.id.view_pager);
         customSwipeAdapter = new CustomSwipeAdapter(getActivity());
         viewPager.setAdapter(customSwipeAdapter);

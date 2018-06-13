@@ -17,7 +17,7 @@ public class ScratchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scratch);
 
         controller = new ScratchoffController(ScratchActivity.this)
-                .setThresholdPercent(0.40d)
+                .setThresholdPercent(0.50d)
                 .setTouchRadiusDip(ScratchActivity.this, 30)
                 .setFadeOnClear(true)
                  .setCompletionCallback(new Runnable() {
