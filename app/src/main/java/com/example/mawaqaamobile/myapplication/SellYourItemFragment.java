@@ -4,9 +4,7 @@ import android.Manifest;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
 import android.graphics.Paint;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
@@ -19,8 +17,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.example.mawaqaamobile.myapplication.UIUtils.RoundedCornersTransform;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
+import com.example.mawaqaamobile.myapplication.PostUpGlideModule.GlideApp;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -29,7 +28,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.squareup.picasso.Picasso;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -108,48 +106,43 @@ public class SellYourItemFragment extends Fragment{
             }
         });
     }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
-            Uri selectedImage = data.getData();
+/*            Uri selectedImage = data.getData();
             String[] filePathColumn = {MediaStore.Images.Media.DATA};
-
             Cursor cursor = getActivity().getContentResolver().query(selectedImage,
                     filePathColumn, null, null, null);
             cursor.moveToFirst();
+
             int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
             String picturePath = cursor.getString(columnIndex);
-            cursor.close();
+            cursor.close();*/
             count = count + 1;
             if (count == 1) {
                 ImageView imageView = (ImageView) getView().findViewById(R.id.bigimage);
-               // Picasso.get().load(data.getData()).into(imageView);
-                Glide.with(this).load(data.getData()).into(imageView);
+                GlideApp.with(this).load(data.getData()).into(imageView);
                 imageView.setVisibility(View.VISIBLE);
             }
             if (count == 2) {
                 ImageView imageView = (ImageView) getView().findViewById(R.id.photo1);
-                Picasso.get().load(data.getData()).transform(new RoundedCornersTransform()).into(imageView);
+                GlideApp.with(this).load(data.getData()).apply(new RequestOptions().transform(new RoundedCorners(10))).into(imageView);
                 imageView.setVisibility(View.VISIBLE);
             }
             if (count == 3) {
                 ImageView imageView = (ImageView) getView().findViewById(R.id.photo2);
-                Picasso.get().load(data.getData()).transform(new RoundedCornersTransform()).into(imageView);
-                //imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+                GlideApp.with(this).load(data.getData()).apply(new RequestOptions().transform(new RoundedCorners(10))).into(imageView);
                 imageView.setVisibility(View.VISIBLE);
             }
             if (count == 4) {
                 ImageView imageView = (ImageView) getView().findViewById(R.id.photo3);
-                Picasso.get().load(data.getData()).transform(new RoundedCornersTransform()).into(imageView);
-                //imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+                GlideApp.with(this).load(data.getData()).apply(new RequestOptions().transform(new RoundedCorners(10))).into(imageView);
                 imageView.setVisibility(View.VISIBLE);
             }
             if (count == 5) {
                 ImageView imageView = (ImageView) getView().findViewById(R.id.photo4);
-                Picasso.get().load(data.getData()).transform(new RoundedCornersTransform()).into(imageView);
-                //imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+                GlideApp.with(this).load(data.getData()).apply(new RequestOptions().transform(new RoundedCorners(10))).into(imageView);
                 imageView.setVisibility(View.VISIBLE);
             }
             else if (count > 5) {

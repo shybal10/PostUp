@@ -14,7 +14,6 @@ import android.widget.ImageButton;
 
 import com.example.mawaqaamobile.myapplication.Adapters.AdsListRecyclerViewAdapter;
 import com.example.mawaqaamobile.myapplication.Adapters.AdsListingGridView;
-
 public class AdsListingFragment extends Fragment implements AdsListRecyclerViewAdapter.ListItemClickListener {
     AdsListRecyclerViewAdapter adsListRecyclerViewAdapter;
     RecyclerView adsListRecyclerView;
@@ -74,7 +73,6 @@ public class AdsListingFragment extends Fragment implements AdsListRecyclerViewA
         });
 
     }
-
     private void changeButton(int id) {
         if (id == R.id.list_view_image_button) {
             listImageButton.setImageDrawable(getResources().getDrawable(R.drawable.categorygray));
@@ -84,7 +82,6 @@ public class AdsListingFragment extends Fragment implements AdsListRecyclerViewA
             gridImageButton.setImageDrawable(getResources().getDrawable(R.drawable.gridgray));
         }
     }
-
     @Override
     public void onListItemClick(int clickedItemIndex) {
         getFragmentManager().beginTransaction().replace(R.id.fragment_continer, detailsFragment).commit();

@@ -1,6 +1,9 @@
 package com.example.mawaqaamobile.myapplication;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -22,6 +25,7 @@ public class DetailsFragment extends Fragment {
     LinearLayout slideDots;
     SpecificationsGridViewAdapter specificationsGridViewAdapter;
     GridView specificationGridView;
+    ImageView call;
     private int dotsCount;
     private ImageView[] dots;
 
@@ -34,6 +38,7 @@ public class DetailsFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        call = (ImageView) view.findViewById(R.id.call_image);
         specificationGridView = (GridView) view.findViewById(R.id.specifications_gridview);
         specificationsGridViewAdapter = new SpecificationsGridViewAdapter(getActivity());
         specificationGridView.setAdapter(specificationsGridViewAdapter);
@@ -74,5 +79,15 @@ public class DetailsFragment extends Fragment {
 
             }
         });
+
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone = "+34666777888";
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
+                startActivity(intent);            }
+        });
+
+
     }
 }

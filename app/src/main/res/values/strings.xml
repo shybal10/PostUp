@@ -49,4 +49,6 @@
     <string name="contact_number">Contact Number</string>
     <string name="automatic">AUTOMATIC</string>
     <string name="terms_amp_conditions_with_underline"><![CDATA[terms & conditions]]></string>
+    <string name="chances_to">Chances to</string>
+    <string name="win">win</string>
 </resources>
