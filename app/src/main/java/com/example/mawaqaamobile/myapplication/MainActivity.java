@@ -126,7 +126,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getFragmentManager().beginTransaction().replace(R.id.fragment_continer, favouritesFragment).commit();
             }
         });
-
         sellAdButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -243,7 +242,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwoover));
         }
     }
-
     private void resetButton() {
         homeButton.setImageDrawable(getResources().getDrawable(R.drawable.menuone));
         sellAdButton.setImageDrawable(getResources().getDrawable(R.drawable.menuthree));
@@ -251,7 +249,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         favouritesButton.setImageDrawable(getResources().getDrawable(R.drawable.menufour));
         categoryButton.setImageDrawable(getResources().getDrawable(R.drawable.menutwo));
     }
-
     private Bitmap resizeBitmapImageFn(
             Bitmap bmpSource, int maxResolution) {
         int iWidth = bmpSource.getWidth();
@@ -259,7 +256,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int newWidth = iWidth;
         int newHeight = iHeight;
         float rate = 0.0f;
-
         if (iWidth > iHeight) {
             if (maxResolution < iWidth) {
                 rate = maxResolution / (float) iWidth;
@@ -276,7 +272,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return Bitmap.createScaledBitmap(
                 bmpSource, newWidth, newHeight, true);
     }
-
     private void loadFragments() {
         sellYourItemFragment = new SellYourItemFragment();
         aboutAppFragment = new AboutAppFragment();

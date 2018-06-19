@@ -61,7 +61,8 @@
                 android:layout_height="55dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:paddingLeft="25dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
                 android:textSize="15.75dp" />
         </android.support.design.widget.TextInputLayout>
 
@@ -98,7 +99,8 @@
                 android:layout_height="55dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:paddingLeft="25dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
                 android:textSize="15.75dp" />
         </android.support.design.widget.TextInputLayout>
 
@@ -130,7 +132,7 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/forgot_password_button"
-            android:textSize="15.75sp"
+            android:textSize="15sp"
             android:layout_alignParentStart="true"
             android:layout_gravity="center"
             android:textAllCaps="false"
@@ -150,7 +152,7 @@
             android:text="@string/new_user_register"
             android:textAllCaps="false"
             android:textColor="#fff"
-            android:textSize="15.75sp" />
+            android:textSize="15sp" />
     </RelativeLayout>
     <LinearLayout
         android:layout_marginTop="35dp"
@@ -202,7 +204,7 @@
                 android:layout_height="wrap_content" />
             <TextView
                 android:paddingStart="5dp"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:layout_weight="1"
                 android:textColor="#fff"
                 android:layout_gravity="center"
@@ -227,7 +229,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:layout_weight="1"
                 android:textColor="#fff"
                 android:layout_gravity="center"

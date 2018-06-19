@@ -7,5 +7,4 @@
     android:textSize="15.75sp"
     android:gravity="center"
     android:textColor="#fff"
-    android:padding="5dip"
-    />
+    android:padding="5dip" />
