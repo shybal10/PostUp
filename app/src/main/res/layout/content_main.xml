@@ -46,18 +46,17 @@
     </RelativeLayout>
 
 
-    <ScrollView
-        android:fillViewport="true"
+    <LinearLayout
         android:layout_below="@+id/search_text_box_relative_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <FrameLayout
             android:id="@+id/fragment_continer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
         </FrameLayout>
 
-    </ScrollView>
+    </LinearLayout>
     <LinearLayout
         android:weightSum="5"
         android:layout_alignParentBottom="true"
