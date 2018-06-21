@@ -52,12 +52,14 @@
                 android:layout_height="35dp" />
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
+            android:layoutAnimation="@anim/animation_from_bottom"
             android:clipToPadding="false"
             android:id="@+id/fav_list_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </android.support.v7.widget.RecyclerView>
         <GridView
+            android:layoutAnimation="@anim/animation_from_bottom"
             android:horizontalSpacing="3dp"
             android:verticalSpacing="3dp"
             android:id="@+id/gridview_favs"

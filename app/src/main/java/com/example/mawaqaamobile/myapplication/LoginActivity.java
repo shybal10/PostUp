@@ -4,24 +4,17 @@ import android.content.Intent;
 import android.graphics.Paint;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Build;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.mawaqaamobile.myapplication.UIUtils.LocaleHelper;
 import com.jaeger.library.StatusBarUtil;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
     Button loginButton, forgotPasswordButton, registerButton,skip;

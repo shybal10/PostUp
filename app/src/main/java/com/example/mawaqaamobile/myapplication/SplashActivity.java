@@ -1,6 +1,8 @@
 package com.example.mawaqaamobile.myapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Build;
@@ -8,25 +10,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.mawaqaamobile.myapplication.UIUtils.LocaleHelper;
 import com.jaeger.library.StatusBarUtil;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Locale;
 
 public class SplashActivity extends AppCompatActivity {
     Button englishButton,arabicButton;
     ImageButton spinnerButton;
     Typeface arabic;
+    private static final String LOCALE_KEY = "localekey";
+    private static final String KUWAITI_LOCALE = "ar";
+    private static final String ENGLISH_LOCALE = "en_US";
+    private static final String LOCALE_PREF_KEY = "localePref";
+    private Locale locale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,15 +45,16 @@ public class SplashActivity extends AppCompatActivity {
         englishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LocaleHelper.setLocale(SplashActivity.this,"en");
+                changeLanguage(ENGLISH_LOCALE);
                 startActivity(new Intent(SplashActivity.this,LoginActivity.class));
             }
         });
         arabicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LocaleHelper.setLocale(SplashActivity.this,"ar-rKW");
+                changeLanguage(KUWAITI_LOCALE);
                 startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+
             }
         });
         String country;
@@ -98,5 +102,30 @@ public class SplashActivity extends AppCompatActivity {
         });
     }
 
+    private void changeLanguage(String LOCALE) {
+        if (Build.VERSION.SDK_INT <= 22){
+/*            Resources resources = getResources();
+            SharedPreferences sharedPreferences = getSharedPreferences("localePref", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            locale = new Locale(LOCALE);
+            editor.putString(LOCALE_KEY, LOCALE);
+            editor.apply();
+            Configuration configuration = resources.getConfiguration();
+            configuration.locale = locale;
+            getBaseContext().getResources().updateConfiguration(configuration,
+                    getBaseContext().getResources().getDisplayMetrics());*/
+        }else {
+            Resources resources = getResources();
+            SharedPreferences sharedPreferences = getSharedPreferences("localePref", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            locale = new Locale(LOCALE);
+            editor.putString(LOCALE_KEY, LOCALE);
+            editor.apply();
+            Configuration configuration = resources.getConfiguration();
+            configuration.setLocale(locale);
+            getBaseContext().getResources().updateConfiguration(configuration,
+                    getBaseContext().getResources().getDisplayMetrics());
+        }
 
+    }
 }

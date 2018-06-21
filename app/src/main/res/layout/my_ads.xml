@@ -80,6 +80,7 @@
     </RelativeLayout>
 
     <GridView
+        android:layoutAnimation="@anim/animation_from_bottom"
         android:layout_marginTop="10dp"
         android:horizontalSpacing="3dp"
         android:verticalSpacing="3dp"
