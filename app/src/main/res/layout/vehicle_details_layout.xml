@@ -409,7 +409,7 @@
         <ImageView
             android:id="@+id/call_image"
             android:layout_marginTop="100dp"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:src="@drawable/contact"
             android:elevation="20dp"
             android:layout_width="70dp"

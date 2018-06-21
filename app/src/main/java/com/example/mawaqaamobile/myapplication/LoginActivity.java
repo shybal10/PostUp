@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mawaqaamobile.myapplication.UIUtils.LocaleHelper;
 import com.jaeger.library.StatusBarUtil;
 
 import org.json.JSONException;
@@ -26,6 +27,8 @@ public class LoginActivity extends AppCompatActivity {
     Button loginButton, forgotPasswordButton, registerButton,skip;
     EditText username, password;
     TextInputLayout userLayout,passLayout;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

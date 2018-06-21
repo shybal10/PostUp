@@ -1,6 +1,7 @@
 package com.example.mawaqaamobile.myapplication;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.mawaqaamobile.myapplication.UIUtils.LocaleHelper;
 import com.jaeger.library.StatusBarUtil;
 
 import java.util.ArrayList;
@@ -32,7 +34,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         arabic = Typeface.createFromAsset(getAssets(),"fonts/GE_SS_TV_Bold.otf");
-        Locale[] locale = Locale.getAvailableLocales();
         final ArrayList<String> countries = new ArrayList<String>();
         arabicButton = (Button) findViewById(R.id.arabic_button);
         arabicButton.setTypeface(arabic);
@@ -41,6 +42,14 @@ public class SplashActivity extends AppCompatActivity {
         englishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                LocaleHelper.setLocale(SplashActivity.this,"en");
+                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+            }
+        });
+        arabicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LocaleHelper.setLocale(SplashActivity.this,"ar-rKW");
                 startActivity(new Intent(SplashActivity.this,LoginActivity.class));
             }
         });

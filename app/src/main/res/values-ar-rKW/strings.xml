@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name" translatable="false">My Application</string>
-    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="login">login</string>
-    <string name="forgot_password">Forgot Password ?</string>
-    <string name="new_user_register">New User! Register</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="forgot_password">هل نسيت كلمة المرور</string>
+    <string name="new_user_register">تسجيل مستخدم جديد</string>
     <string name="or_sign_in_with">Or sign in with</string>
     <string name="facebook">Facebook</string>
     <string name="arabic">عربي</string>
@@ -26,7 +26,7 @@
     <string name="click_here_to_view_our">Click Here To View Our</string>
     <string name="terms_amp_conditions"><![CDATA[terms & conditions]]></string>
     <string name="about_app">About App</string>
-    <string name="english">English</string>
+    <string name="english">مؤنبم</string>
     <string name="click_here">click here</string>
     <string name="choose_package">Choose Package</string>
     <string name="my_balance">My Balance</string>
