@@ -11,7 +11,6 @@
     android:layout_width="match_parent"
     android:paddingTop="10dp"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/transparent"
     android:orientation="vertical">
 
@@ -410,7 +409,7 @@
         <ImageView
             android:id="@+id/call_image"
             android:layout_marginTop="100dp"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:src="@drawable/contact"
             android:elevation="20dp"
             android:layout_width="70dp"

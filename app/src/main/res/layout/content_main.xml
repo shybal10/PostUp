@@ -123,7 +123,6 @@
             android:layout_width="0.5dp"
             android:layout_height="match_parent">
         </View>
-
         <ImageButton
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
@@ -133,14 +132,5 @@
             android:textAllCaps="false"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
-
     </LinearLayout>
-
-
-
-
-
-
-
-
 </RelativeLayout>
