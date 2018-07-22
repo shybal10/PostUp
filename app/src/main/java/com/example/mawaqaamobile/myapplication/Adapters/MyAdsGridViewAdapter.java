@@ -10,10 +10,12 @@ import com.example.mawaqaamobile.myapplication.R;
 
 public class MyAdsGridViewAdapter extends BaseAdapter {
     Context mcontext;
+
     public MyAdsGridViewAdapter(Context context) {
         super();
         mcontext = context;
     }
+
     @Override
     public int getCount() {
         return 5;
@@ -40,15 +42,12 @@ public class MyAdsGridViewAdapter extends BaseAdapter {
             imageView = new View(mcontext);
             imageView = inflater.inflate(R.layout.my_ads_grid_view_item, null);
             //ImageView image = (ImageView) imageView.findViewById(R.id.imageView1);
-
-
-        }
-        else {
+        } else {
 
             imageView = (View) convertView;
 
         }
         return imageView;
     }
-    }
+}
 

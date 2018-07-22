@@ -103,17 +103,12 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void changeLanguage(String LOCALE) {
-        if (Build.VERSION.SDK_INT <= 22){
-/*            Resources resources = getResources();
-            SharedPreferences sharedPreferences = getSharedPreferences("localePref", MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            locale = new Locale(LOCALE);
-            editor.putString(LOCALE_KEY, LOCALE);
-            editor.apply();
-            Configuration configuration = resources.getConfiguration();
-            configuration.locale = locale;
-            getBaseContext().getResources().updateConfiguration(configuration,
-                    getBaseContext().getResources().getDisplayMetrics());*/
+        if (Build.VERSION.SDK_INT <= 21){
+            Locale locale = new Locale(LOCALE);
+            Locale.setDefault(locale);
+            Configuration config = new Configuration();
+            config.locale = locale;
+            getBaseContext().getResources().updateConfiguration(config, null);
         }else {
             Resources resources = getResources();
             SharedPreferences sharedPreferences = getSharedPreferences("localePref", MODE_PRIVATE);

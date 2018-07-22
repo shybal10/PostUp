@@ -9,7 +9,7 @@ import android.widget.GridView;
 
 import com.example.mawaqaamobile.myapplication.R;
 
-public class AdsListingGridView extends BaseAdapter{
+public class AdsListingGridView extends BaseAdapter {
 
     Context mcontext;
 
@@ -17,6 +17,7 @@ public class AdsListingGridView extends BaseAdapter{
         super();
         mcontext = context;
     }
+
     @Override
     public int getCount() {
         return 5;
@@ -45,8 +46,7 @@ public class AdsListingGridView extends BaseAdapter{
             //ImageView image = (ImageView) imageView.findViewById(R.id.imageView1);
 
 
-        }
-        else {
+        } else {
 
             imageView = (View) convertView;
 

@@ -49,5 +49,6 @@ public class FavsListGridViewAdapter extends BaseAdapter {
             imageView = (View) convertView;
 
         }
-        return imageView;    }
+        return imageView;
+    }
 }

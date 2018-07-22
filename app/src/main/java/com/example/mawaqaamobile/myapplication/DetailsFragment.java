@@ -85,7 +85,8 @@ public class DetailsFragment extends Fragment {
             public void onClick(View v) {
                 String phone = "+34666777888";
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
-                startActivity(intent);            }
+                startActivity(intent);
+            }
         });
 
     }

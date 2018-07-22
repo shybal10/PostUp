@@ -10,10 +10,12 @@ import com.example.mawaqaamobile.myapplication.R;
 
 public class SpecificationsGridViewAdapter extends BaseAdapter {
     Context mcontext;
+
     public SpecificationsGridViewAdapter(Context context) {
         super();
         mcontext = context;
     }
+
     @Override
     public int getCount() {
         return 6;
@@ -42,11 +44,11 @@ public class SpecificationsGridViewAdapter extends BaseAdapter {
             //ImageView image = (ImageView) imageView.findViewById(R.id.imageView1);
 
 
-        }
-        else {
+        } else {
 
             imageView = (View) convertView;
 
         }
-        return imageView;    }
+        return imageView;
+    }
 }

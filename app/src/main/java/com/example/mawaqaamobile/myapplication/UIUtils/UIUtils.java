@@ -8,6 +8,7 @@ import android.widget.ListAdapter;
 public class UIUtils {
     /**
      * Sets GridView height dynamically based on the height of the items this is used to show specifications Gridview.
+     *
      * @return true if the listView is successfully resized, false otherwise
      */
     public static boolean setListViewHeightBasedOnItems(GridView gridView) {
@@ -29,9 +30,10 @@ public class UIUtils {
 /*            int totalDividersHeight = listView.getHeight() *
                     (numberOfItems - 2);*/
 
+
             // Set list height.
             ViewGroup.LayoutParams params = gridView.getLayoutParams();
-            params.height = (totalItemsHeight/2) + 20;
+            params.height = (totalItemsHeight / 2) + 20;
             gridView.setLayoutParams(params);
             gridView.requestLayout();
 

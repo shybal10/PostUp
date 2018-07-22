@@ -53,6 +53,7 @@ public class CategoriesAdapter extends BaseAdapter  {
                     relativeLayout.setBackgroundResource(R.drawable.button_click);
                 }
             });
+
 */
 
             //ImageView image = (ImageView) imageView.findViewById(R.id.imageView1);
